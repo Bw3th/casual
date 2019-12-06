@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+import Index from '@/components/index/Index'
 
-Vue.use(VueAxios, axios)
 Vue.use(Router)
 
 export default new Router({
@@ -13,6 +11,11 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component: Index
     }
   ]
 })
