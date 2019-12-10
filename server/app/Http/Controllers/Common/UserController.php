@@ -43,10 +43,8 @@ class UserController extends Controller
         } else {
             $hasher = new BcryptHasher();
             if ($hasher->check($password, $user->getAuthPassword())) {
-                $token = $user->createToken('Login Success:' . $loginType);
-                $token->token_type = 'Bearer';
                 $res = [
-                    'access_token' => $token->accessToken,
+                    'access_token' => 11111111111111111111,
                     'token_type' => 'Bearer',
                 ];
                 return responder()->success($res);
