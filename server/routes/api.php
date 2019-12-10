@@ -16,3 +16,13 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::prefix('common')->namespace('Common')->group(function ($router) {
+    $router->post('login', 'UserController@login');
+    $router->post('logout', 'UserController@logout');
+});
+
+
+Route::prefix('food')->middleware([])->namespace('Food')->group(function ($router) {
+    $router->get('food', 'FoodController@index');
+});
