@@ -31,3 +31,7 @@ Route::prefix('usercenter')->middleware([])->namespace('UserCenter')->group(func
 Route::prefix('food')->middleware([])->namespace('Food')->group(function ($router) {
     $router->get('food', 'FoodController@index');
 });
+
+Route::prefix('file')->middleware([])->namespace('File')->group(function ($router) {
+    $router->get('upload', 'FileController@upload');
+});

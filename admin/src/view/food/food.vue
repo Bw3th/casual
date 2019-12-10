@@ -19,20 +19,20 @@
       ></Page>
     </Table>
 
-    <!-- <Drawer title="编辑" :mask-closable="false" :width="500" :closable="true" v-model="showEditor">
+    <Drawer title="编辑" :mask-closable="false" :width="500" :closable="true" v-model="showEditor">
       <edit @saved="saved" :value="form"></edit>
-    </Drawer> -->
+    </Drawer>
   </div>
 </template>
 
 <script>
 /* eslint-disable */
 import axios from "@/libs/api.request";
-// import edit from "./category-edit";
+import edit from "./food-edit";
 export default {
   name: "",
   components: {
-    // edit
+    edit
   },
   props: {
     type: {
