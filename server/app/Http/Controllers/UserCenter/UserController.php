@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function userInfo()
     {
-        $user = auth('api')->user();
+        $user = User::find(1);
         return responder()->success($user);
     }
     public function updateMyInfo(Request $request)
