@@ -22,7 +22,7 @@ Route::prefix('common')->namespace('Common')->group(function ($router) {
     $router->post('logout', 'UserController@logout');
 });
 
-Route::prefix('usercenter')->middleware(['auth:api'])->namespace('UserCenter')->group(function ($router) {
+Route::prefix('usercenter')->middleware([])->namespace('UserCenter')->group(function ($router) {
     $router->get('get_info', 'UserController@userInfo');
     $router->post('update_my_info', 'UserController@updateMyInfo');
     $router->post('change_phone', 'UserController@changePhone');
