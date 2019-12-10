@@ -16,9 +16,20 @@ class FoodController extends Controller
 
     public function add(Request $request)
     {
-        $data['name'] = $request->input('name');
-        $data['introduce'] = $request->input('introduce');
-        $data['score'] = $request->input('score');
-        $data['image'] = $request->input('image');
+        $response = [
+            'error_code' => 0,
+            'error_msg' => 'success',
+            'failed' => [],
+            'successful' => [],
+        ];
+        $data['name'] = $request->input('name')?$request->input('name'):'';
+        $data['introduce'] = $request->input('introduce')?$request->input('introduce'):'';
+        $data['score'] = $request->input('score')?$request->input('score'):'';
+        $data['image'] = $request->input('image')?$request->input('image'):'';
+        $data['created_at'] = date("Y-m-d H:i:s");
+        $data['updated_at'] = date("Y-m-d H:i:s");
+        $res = Foods::insert($data);
+        $response['successful'] = $res;
+        return $response;
     }
 }
