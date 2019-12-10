@@ -24,8 +24,8 @@ class FoodController extends Controller
         ];
         $data['name'] = $request->input('name')?$request->input('name'):'';
         $data['introduce'] = $request->input('introduce')?$request->input('introduce'):'';
-        $data['score'] = $request->input('score')?$request->input('score'):'';
-        $data['image'] = $request->input('image')?$request->input('image'):'';
+        $data['score'] = $request->input('score')?$request->input('score'):0;
+        $data['image'] = $request->input('image')?$request->input('image'):0;
         $data['created_at'] = date("Y-m-d H:i:s");
         $data['updated_at'] = date("Y-m-d H:i:s");
         $res = Foods::insert($data);
