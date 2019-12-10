@@ -50,6 +50,25 @@ export default [
       }
     ]
   },
+  {
+    path: '/food',
+    name: '没事管理',
+    component: Main,
+    meta: {
+      hideInBread: true
+    },
+    children: [
+      {
+        path: '/foodlist',
+        name: 'Foodlist',
+        meta: {
+          icon: 'logo-markdown',
+          title: '菜单列表'
+        },
+        component: () => import('@/view/food/food.vue')
+      }
+    ]
+  },
   // {
   //   path: '',
   //   name: 'doc',
