@@ -69,7 +69,7 @@ export default {
   methods: {
     save() {
       let method = "POST";
-      let url = "api/cost/tags";
+      let url = "api/food/food";
       if (this.form.id) {
         method = "PUT";
         url += "/" + this.form.id;
