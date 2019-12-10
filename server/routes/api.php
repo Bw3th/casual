@@ -31,6 +31,8 @@ Route::prefix('usercenter')->middleware([])->namespace('UserCenter')->group(func
 Route::prefix('food')->middleware([])->namespace('Food')->group(function ($router) {
     $router->get('food', 'FoodController@index');
     $router->post('food', 'FoodController@add');
+    $router->put('food/{id}', 'FoodController@update');
+    $router->delete('food/{id}', 'FoodController@delete');
 });
 
 Route::prefix('file')->middleware([])->namespace('File')->group(function ($router) {

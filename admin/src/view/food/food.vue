@@ -138,7 +138,7 @@ export default {
           axios
             .request({
               method: "delete",
-              url: "api/cost/tags/" + row.id
+              url: "api/food/delete/" + row.id
             })
             .then(res => {
               this.getData();
