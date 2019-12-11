@@ -4,6 +4,7 @@ namespace App\Http\Controllers\File;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\File;
 
 class FileController extends Controller
 {
