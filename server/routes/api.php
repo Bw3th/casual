@@ -36,5 +36,5 @@ Route::prefix('food')->middleware([])->namespace('Food')->group(function ($route
 });
 
 Route::prefix('file')->middleware([])->namespace('File')->group(function ($router) {
-    $router->get('upload', 'FileController@upload');
+    $router->post('upload', 'FileController@upload');
 });
