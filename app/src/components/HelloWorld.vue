@@ -30,21 +30,21 @@
       <el-row>
         <el-col :span="8">
           <div class="provide_services">
-            <span><img src="..\assets\index\images\lunch.png" alt=""></span>
+            <span><img src="../assets/index/images/lunch.png" alt=""></span>
             <h2>中餐</h2>
             <p>公司目前经营的范围包括：电子商务平台开发技术支持、技术转让、运维技术服务大数据、云计算等。</p>
           </div>
         </el-col>
         <el-col :span="8">
           <div class="provide_services">
-            <span><img src="..\assets\index\images\dinner.png" alt=""></span>
+            <span><img src="../assets/index/images/dinner.png" alt=""></span>
             <h2>晚餐</h2>
             <p>公司目前经营的范围包括：电子商务平台开发技术支持、技术转让、运维技术服务大数据、云计算等。</p>
           </div>
         </el-col>
         <el-col :span="8">
           <div class="provide_services">
-            <span><img src="..\assets\index\images\coffee.png" alt=""></span>
+            <span><img src="../assets/index/images/coffee.png" alt=""></span>
             <h2>甜品/咖啡</h2>
             <p>公司目前经营的范围包括：电子商务平台开发技术支持、技术转让、运维技术服务大数据、云计算等。</p>
           </div>
@@ -59,7 +59,7 @@
       <div style="width:1200px;border-top:1px solid #ddd;margin:0 auto;"> &nbsp;</div>
       <div style="font-size: 0;">
         <el-row>
-          <el-col :span="24"><div><img width="100%" class="mdbanner" src="..\assets\index\images\mdbanner.jpg"></div></el-col>
+          <el-col :span="24"><div><img width="100%" class="mdbanner" src="../assets/index/images/mdbanner.jpg"></div></el-col>
         </el-row>
       </div>
       <div>
@@ -68,15 +68,15 @@
           <el-col :span="14">
             <div>
               <ul class="aesthetic_map_ul">
-                <li><img src="..\assets\index\images\mdlist1.jpg"></li>
-                <li><img src="..\assets\index\images\mdlist2.jpg"></li>
-                <li><img src="..\assets\index\images\mdlist3.jpg"></li>
-                <li><img src="..\assets\index\images\mdlist4.jpg"></li>
-                <li><img src="..\assets\index\images\mdlist5.jpg"></li>
-                <li><img src="..\assets\index\images\mdlist6.jpg"></li>
-                <li><img src="..\assets\index\images\mdlist7.jpg"></li>
-                <li><img src="..\assets\index\images\mdlist8.jpg"></li>
-                <li><img src="..\assets\index\images\mdlist9.jpg"></li>
+                <li><img src="../assets/index/images/mdlist1.jpg"></li>
+                <li><img src="../assets/index/images/mdlist2.jpg"></li>
+                <li><img src="../assets/index/images/mdlist3.jpg"></li>
+                <li><img src="../assets/index/images/mdlist4.jpg"></li>
+                <li><img src="../assets/index/images/mdlist5.jpg"></li>
+                <li><img src="../assets/index/images/mdlist6.jpg"></li>
+                <li><img src="../assets/index/images/mdlist7.jpg"></li>
+                <li><img src="../assets/index/images/mdlist8.jpg"></li>
+                <li><img src="../assets/index/images/mdlist9.jpg"></li>
                 <li class="clear"></li>
               </ul>
             </div>
@@ -93,9 +93,9 @@ export default {
   data () {
     return {
       images:[
-        require('..\assets\index\images\banner.jpg'),
-        require('..\assets\index\images\banner2.jpg'),
-        require('..\assets\index\images\banner3.jpg')
+        require('../assets/index/images/banner.jpg'),
+        require('../assets/index/images/banner2.jpg'),
+        require('../assets/index/images/banner3.jpg')
       ],
       imgHeight:'880px',
     }
