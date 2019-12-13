@@ -28,7 +28,7 @@ Route::prefix('usercenter')->middleware([])->namespace('UserCenter')->group(func
     $router->post('change_phone', 'UserController@changePhone');
 });
 
-Route::prefix('food')->middleware([])->namespace('Food')->group(function ($router) {
+Route::prefix('food')->middleware([])->namespace('Backend')->group(function ($router) {
     $router->get('food', 'FoodController@index');
     $router->post('food', 'FoodController@add');
     $router->put('food/{id}', 'FoodController@update');
