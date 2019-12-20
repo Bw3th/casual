@@ -60,7 +60,7 @@ export default {
         },
         {
           title: "图片",
-          key: "image",
+          key: "file",
           align: "center",
              render: (h, params) => {
             let fileLists = params.row.file;
