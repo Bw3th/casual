@@ -59,8 +59,17 @@ export default {
           key: "score"
         },
         {
-          title: "样式图",
-          key: "image"
+          title: "图片",
+          key: "image",
+          align: "center",
+             render: (h, params) => {
+            let fileLists = params.row.file;
+            return h('div',fileLists.map(item=>{
+                    return h('a',  {
+                      attrs: { href: item.url, target: '_blank' }
+                  }, item.filename);
+              }),)
+          }
         },
         {
           title: "操作",
