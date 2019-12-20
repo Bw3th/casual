@@ -13,7 +13,7 @@ class FoodController extends Controller
     {
         $res = Foods::where('is_delete',0)->paginate();
         foreach($res as $k => $v){
-            $file = explode(',',$v['file']);
+            $file = explode(',',$v['image']);
             $img = [];
             $imgnum = 0;
             $files = [];
