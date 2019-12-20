@@ -70,6 +70,7 @@ class FoodController extends Controller
         $data['introduce'] = $request->input('introduce')?$request->input('introduce'):'';
         $data['score'] = $request->input('score')?$request->input('score'):0;
         $data['image'] = implode(',',$request->input('image',[]));
+        return $data['image'];
         $data['updated_at'] = date("Y-m-d H:i:s");
         $res = Foods::find($id);
         $res->update($data);
