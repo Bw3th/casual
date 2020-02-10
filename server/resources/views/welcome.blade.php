@@ -65,6 +65,20 @@
         </style>
     </head>
     <body>
+    <div style="width:100%;">
         姓名:<input type="text">
+    </div>
+    <div style="width:100%;">
+        电话号码:<input type="text">
+    </div>
+    <div style="width:100%;">
+        收货地址:<input type="text">
+    </div>
+    <div style="width:100%;">
+        购买物品:<textarea rows="3" cols="20"></textarea>
+    </div>
+    <div style="width:100%;">
+        <button>提交</button>
+    </div>
     </body>
 </html>
