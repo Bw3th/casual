@@ -65,19 +65,19 @@
         </style>
     </head>
     <body>
-    <div style="width:100%;">
-        姓名:<input type="text">
+    <div style="width:100%;text-align:center;margin:10px 0;">
+        姓名 : <input type="text">
     </div>
-    <div style="width:100%;">
-        电话号码:<input type="text">
+    <div style="width:100%;text-align:center;margin:10px 0;">
+        电话号码 : <input type="text">
     </div>
-    <div style="width:100%;">
-        收货地址:<input type="text">
+    <div style="width:100%;text-align:center;margin:10px 0;">
+        收货地址 : <input type="text">
     </div>
-    <div style="width:100%;">
-        购买物品:<textarea rows="3" cols="20"></textarea>
+    <div style="width:100%;text-align:center;margin:10px 0;">
+        购买物品 : <textarea rows="3" cols="40"></textarea>
     </div>
-    <div style="width:100%;">
+    <div style="width:100%;text-align:center;margin:10px 0;">
         <button>提交</button>
     </div>
     </body>
